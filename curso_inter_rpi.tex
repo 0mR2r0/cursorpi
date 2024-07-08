@@ -124,23 +124,51 @@
 		
 	\end{frame}
 	
-	\section{Comandos básicos}
 	\begin{frame}
-		\frametitle{Comandos básicos de la terminal}
-		
+		\frametitle{Configuración inicial}
+		\framesubtitle{Comandos básicos de la terminal}
 		\begin{tcolorbox}[enhanced, title= Instrucciones:]
 			\begin{itemize}
+				\item sudo :  Comando para acceder a derechos de superusuario.
 				\item cd  : Cambiar de directorio a una ruta especificada.
 				\item cd .. : Subir un nivel en la ruta.
 				\item ls  : Listar archivos de un fichero/carpeta.
 				\item pwd : Mostrar la ruta del carpeta.
 				\item mkdir : Crear una carpeta.
 				\item nano : Gestor de texto desde la terminal.
-				\item cp   : Copiar fichero o archivo hacia una ruta especificada. 
+				\item cp   : Copiar fichero o archivo hacia una ruta especificada.
+				
+				
 			\end{itemize}
 		\end{tcolorbox}
 		
 	\end{frame}
 	
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Comandos básicos de la terminal}
+		\begin{tcolorbox}[enhanced, title= Instrucciones:]
+			\begin{itemize}
+				\item ifconfig : Consultar la información de las interfaces de red.
+				\item sudo raspi-config : Entrar a la configuración de la Raspberry Pi
+				\item pinout : Muestra la distribución de pines de la tarjeta.
+			\end{itemize}
+		\end{tcolorbox}
+		
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Cambiar la configuración de la RPi}
+		
+		Una vez terminada la instalación, se abre una terminal y se ejecuta el siguiente comando date: 
+		\begin{figure}
+			\includegraphics[scale=0.25]{daterpi.png}
+			\caption{Consulta la fecha del sistema}
+		\end{figure}
+		Para colocar la fecha actual se ejecutará el siguiente comando en la terminal de la RPi: \textbf{sudo date -s ‘YYYY-MM-DD HH:MM:SS'.}
+		
+	\end{frame}
 %----------------------------------------------------
 \end{document}
