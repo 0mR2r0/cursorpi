@@ -37,7 +37,7 @@
 			\item ¿Cuáles son tus expectativas del curso?
 		\end{itemize}
 	\end{frame}
-	
+	\subsection{Generalidades y requisitos}
 	\begin{frame}
 		\frametitle{Introducción}
 		\framesubtitle{¿Qué es una Raspberry Pi?}
@@ -56,9 +56,10 @@
 		
 		\begin{tcolorbox}[enhanced, title= Material necesario:]
 			\begin{itemize}
-				\item Tarjeta Raspberry Pi(Cualquier versión)
-				\item Fuente de alimentación de 5V a 3A
-				\item Tarjeta de almacenamiento micro SD de 64 Gb o superior clase 10 o superior
+				\item Tarjeta Raspberry. Pi(Cualquier versión)
+				\item Fuente de alimentación de 5V a 3A.
+				\item Tarjeta de almacenamiento micro SD de 64 Gb o superior clase 10 o superior.
+				\item Mouse y teclado.
 			\end{itemize}
 		\end{tcolorbox}
 		
@@ -90,7 +91,7 @@
 		\end{figure}
 		
 	\end{frame}
-	
+	\subsection{Instalación de Raspbian}
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Selección de Tarjeta}
@@ -123,7 +124,7 @@
 		\end{figure}
 		
 	\end{frame}
-	
+	\subsection{Comandos básicos}
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Comandos básicos de la terminal}
@@ -157,7 +158,7 @@
 		
 		
 	\end{frame}
-	
+	\subsection{Ajustes de tarjeta RPi}
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Cambiar la configuración de la RPi}
@@ -194,7 +195,7 @@
 		\end{figure}
 		
 	\end{frame}
-	
+	\subsection{Definición de IP estática}
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Definir una IP estática}
@@ -205,6 +206,44 @@
 			\caption{Administrador configuración de red.}
 		\end{figure}
 	\end{frame}
+	\begin{frame}
+	\frametitle{Configuración inicial}
+	\framesubtitle{Definir una IP estática}
+	Seleccionar el tipo de interfaz a convenir, si esta conectada vía Ethernet o Wi-Fi:
+		\begin{figure}
+			\includegraphics[scale=0.25]{rpissh2.png}
+			\caption{Seleccionar la interfaz a modificar}
+		\end{figure}
+	\end{frame}
 	
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Definir una IP estática}
+		En el apartado de IPv4 es donde se va a configurar la IP estática.
+		\begin{figure}
+			\includegraphics[scale=0.25]{rpissh3.png}
+			\caption{Se seleccionó una conexion via Ethernet}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Definir una IP estática}
+		Para consultar la IP a la cual esta conectada la RPi, vamos a salir del menu anterior y ejecutar en la terminal el siguiente comando: "\textbf{ifconfig}"
+		
+		\begin{figure}
+			\includegraphics[scale=0.25]{rpissh5.png}
+			\caption{Informacion de la red mediante el comando ifconfig}
+		\end{figure}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Definir una IP estática}
+		Una vez anotada la información anterior acceder el Network manager de la RPi, y capturar en: \textbf{Address}, \textbf{Gateway} y \textbf{DNS Server}
+		\begin{figure}
+			\includegraphics[scale=0.25]{rpissh4.png}
+			\caption{Network manager de la RPi}
+		\end{figure}
+	\end{frame}
 %----------------------------------------------------
 \end{document}
