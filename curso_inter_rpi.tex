@@ -187,13 +187,24 @@
 		\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Configuración de interfaces}
-		Selecciona las interfaces de SSH, SPI, I2C, Serial Port, 1-Wire.
+		Selecciona una por una las interfaces de SSH, SPI, I2C, Serial Port, 1-Wire.
 		\begin{figure}
 			\includegraphics[scale=0.3]{configrpi2.png}
 			\caption{Selección de interfaces de la tarjeta de RPi. }
 		\end{figure}
 		
-		
 	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Definir una IP estática}
+		Para poder trabajar de manera remota sin la necesidad de usar un monitor externo mediante una terminal SSH(Secure Shell). Ejecutamos el siguiente comando en la terminal "\textbf{sudo nmtui} "
+		
+		\begin{figure}
+			\includegraphics[scale=0.25]{rpissh.png}
+			\caption{Administrador configuración de red.}
+		\end{figure}
+	\end{frame}
+	
 %----------------------------------------------------
 \end{document}
