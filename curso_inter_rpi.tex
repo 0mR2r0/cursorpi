@@ -73,7 +73,7 @@
 		\begin{tcolorbox}[enhanced, title= Instrucciones:]
 				\begin{itemize}
 					\item Visitar la siguiente liga: \url{https://www.raspberrypi.com/software/}
-					\item Descargar la version correspondiente con su respectivo sistema operativo, y dar click en \textbf{descargar}
+					\item Descargar la versión correspondiente con su respectivo sistema operativo, y dar click en \textbf{descargar}
 					\item Una vez instalado se mostrará la siguiente interfaz de Raspberry Pi Imager.
 				\end{itemize}
 		\end{tcolorbox}
@@ -222,17 +222,17 @@
 		En el apartado de IPv4 es donde se va a configurar la IP estática.
 		\begin{figure}
 			\includegraphics[scale=0.25]{rpissh3.png}
-			\caption{Se seleccionó una conexion via Ethernet}
+			\caption{Se seleccionó una conexión via Ethernet}
 		\end{figure}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Definir una IP estática}
-		Para consultar la IP a la cual esta conectada la RPi, vamos a salir del menu anterior y ejecutar en la terminal el siguiente comando: "\textbf{ifconfig}"
+		Para consultar la IP a la cual esta conectada la RPi, vamos a salir del menú anterior y ejecutar en la terminal el siguiente comando: "\textbf{ifconfig}"
 		
 		\begin{figure}
 			\includegraphics[scale=0.25]{rpissh5.png}
-			\caption{Informacion de la red mediante el comando ifconfig}
+			\caption{Información de la red mediante el comando ifconfig}
 		\end{figure}
 		
 	\end{frame}
@@ -245,5 +245,53 @@
 			\caption{Network manager de la RPi}
 		\end{figure}
 	\end{frame}
+	\subsection{Conexión remota con SSH}
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Conexion SSH con Windows}
+		Para crear la conexión SSH con Windows se utilizará el siguiente programa PuTTY:
+		\begin{tcolorbox}[enhanced, title= Instrucciones:]
+			\begin{itemize}
+				\item Visitar la siguiente liga: \url{https://putty.org/}
+				\item Descargar la versión correspondiente con su respectivo sistema operativo.
+				\item Seguir los pasos de instalación.
+			\end{itemize}
+		\end{tcolorbox}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Conexión SSH con Windows}
+		Terminada la instalación ubicar el programa PuTTY y ejecutarlo a continuación mostrará lo siguiente:
+		\begin{figure}
+			\includegraphics[scale=0.4]{putty.jpeg}
+			\caption{Configuración de PuTTY}
+		\end{figure}
+		En el campo de \textbf{Host Name}, introducir la IP que previamente se fijo en la RPi y dar click en \textbf{Open}.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Conexión SSH con Windows}
+		Cuando se abra la terminal capturar el \textbf{usuario} que definieron al inicio de la instalación en Raspbian y su respectiva contraseña:
+		\begin{figure}
+			\includegraphics[scale=0.5]{putty2.jpeg}
+			\caption{Captura de usuario y contraseña para acceso a la RPi}
+		\end{figure}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Conexión SSH con Windows}
+		Posteriormente aparecerá una advertencia de conexión aceptarla y finalmente aparecerá la terminal de la RPi
+		\begin{figure}
+			\includegraphics[scale=0.5]{putty3.jpeg}
+			\caption{Terminal de la RPi}
+		\end{figure}
+		
+	\end{frame}
+	
+	
+	\subsection{Actualización de paquetes}
 %----------------------------------------------------
 \end{document}
