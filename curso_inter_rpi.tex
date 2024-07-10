@@ -54,14 +54,14 @@
 		\frametitle{Configuración inicial}
 		\framesubtitle{Requisitos}
 		
-		\begin{tcolorbox}[enhanced, title= Material necesario:]
+		\begin{mybox}{Material necesario:}
 			\begin{itemize}
 				\item Tarjeta Raspberry. Pi(Cualquier versión)
 				\item Fuente de alimentación de 5V a 3A.
 				\item Tarjeta de almacenamiento micro SD de 64 Gb o superior clase 10 o superior.
 				\item Mouse y teclado.
 			\end{itemize}
-		\end{tcolorbox}
+		\end{mybox}
 		
 			
 	\end{frame}
@@ -70,13 +70,13 @@
 		\frametitle{Configuración inicial}
 		\framesubtitle{Instalación de Raspbian}
 		
-		\begin{tcolorbox}[enhanced, title= Instrucciones:]
+		\begin{mybox}{Instrucciones:} 
 				\begin{itemize}
 					\item Visitar la siguiente liga: \url{https://www.raspberrypi.com/software/}
 					\item Descargar la versión correspondiente con su respectivo sistema operativo, y dar click en \textbf{descargar}
 					\item Una vez instalado se mostrará la siguiente interfaz de Raspberry Pi Imager.
 				\end{itemize}
-		\end{tcolorbox}
+		\end{mybox}
 		
 		
 	\end{frame}
@@ -128,7 +128,7 @@
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Comandos básicos de la terminal}
-		\begin{tcolorbox}[enhanced, title= Instrucciones:]
+		\begin{mybox}{Instrucciones:}
 			\begin{itemize}
 				\item sudo :  Comando para acceder a derechos de superusuario.
 				\item cd  : Cambiar de directorio a una ruta especificada.
@@ -141,20 +141,20 @@
 				
 				
 			\end{itemize}
-		\end{tcolorbox}
+		\end{mybox}
 		
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Configuración inicial}
 		\framesubtitle{Comandos básicos de la terminal}
-		\begin{tcolorbox}[enhanced, title= Instrucciones:]
+		\begin{mybox}{Instrucciones:}
 			\begin{itemize}
 				\item ifconfig : Consultar la información de las interfaces de red.
 				\item sudo raspi-config : Entrar a la configuración de la Raspberry Pi
 				\item pinout : Muestra la distribución de pines de la tarjeta.
 			\end{itemize}
-		\end{tcolorbox}
+		\end{mybox}
 		
 		
 	\end{frame}
@@ -250,13 +250,13 @@
 		\frametitle{Configuración inicial}
 		\framesubtitle{Conexion SSH con Windows}
 		Para crear la conexión SSH con Windows se utilizará el siguiente programa PuTTY:
-		\begin{tcolorbox}[enhanced, title= Instrucciones:]
+		\begin{mybox}{Instrucciones:}
 			\begin{itemize}
 				\item Visitar la siguiente liga: \url{https://putty.org/}
 				\item Descargar la versión correspondiente con su respectivo sistema operativo.
 				\item Seguir los pasos de instalación.
 			\end{itemize}
-		\end{tcolorbox}
+		\end{mybox}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Configuración inicial}
@@ -290,8 +290,17 @@
 		\end{figure}
 		
 	\end{frame}
-	
-	
 	\subsection{Actualización de paquetes}
+	\begin{frame}
+		\frametitle{Configuración inicial}
+		\framesubtitle{Actualización de paquetes}
+		A continuación vamos actualizar todo el software instalado a la ultima versión usando el administrador de paquetes \textbf{apt} (Advanced Packaging Tool)
+		\begin{mybox}{Comandos de actualización:}
+			\begin{itemize}
+				\item sudo apt update
+				\item sudo apt upgrade
+			\end{itemize}
+		\end{mybox}
+	\end{frame}
 %----------------------------------------------------
 \end{document}
