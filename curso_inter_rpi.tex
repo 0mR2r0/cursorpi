@@ -339,7 +339,7 @@
 	\begin{frame}
 		\frametitle{Programación en RPi}
 		\framesubtitle{¿Qué es el GPIO?}
-		El GPIO o \textit{Entrada/Salidas de proposito general} es un pin genérico en un chip. En este caso la RPi cuenta con dos configuraciones de GPIO:
+		El GPIO o \textit{Entrada/Salidas de propósito general} es un pin genérico en un chip. En este caso la RPi cuenta con dos configuraciones de GPIO:
 		\begin{mybox}{GPIO}
 			\begin{itemize}
 				\item GPIO.BOARD: Este indica a los pines según su numeración.
@@ -362,6 +362,25 @@
 		\begin{figure}
 			\includegraphics[scale=0.34]{rpibcm2.png}
 			\caption{Enumeración de pines según BCM}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Uso del GPIO}
+		Para el uso del GPIO usando Python vamos a programar lo siguiente:
+		\begin{mybox}{Encender un LED}
+			\begin{itemize}
+				\item Se va encender y apagar un led con un retardo de 1 segundo.
+				\item Uso de la biblioteca \textbf{time} y \textbf{GPIO.BOARD}
+			\end{itemize}
+		\end{mybox}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Uso del GPIO}
+		\begin{figure}
+			\includegraphics[scale=0.3]{led.png}
+			\caption{Programa para encender un LED}
 		\end{figure}
 	\end{frame}
 %----------------------------------------------------
