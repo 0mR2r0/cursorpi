@@ -136,7 +136,7 @@
 				\item ls  : Listar archivos de un fichero/carpeta.
 				\item pwd : Mostrar la ruta del carpeta.
 				\item mkdir : Crear una carpeta.
-				\item nano : Gestor de texto desde la terminal.
+				\item nano : Editor de texto desde la terminal.
 				\item cp   : Copiar fichero o archivo hacia una ruta especificada.
 				
 				
@@ -320,10 +320,49 @@
 		\framesubtitle{Creación de un archivo}
 		Con las instrucciones anteriores la terminal mostrará la siguiente ventana:
 		\begin{figure}
-			\includegraphics[scale=0.3]{nanorpi.png}
+			\includegraphics[scale=0.25]{nanorpi.png}
 			\caption{Editor de texto nano. }
 		\end{figure}
 	\end{frame}
-	
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Actividad 1:}
+		\begin{mybox}{Creación de un archivo de texto}
+			\begin{itemize}
+				\item Crear una carpeta en la dirección del \textit{home} con el nombre \textbf{cursorpi}, dentro de esa misma agregar otra carpeta con el nombre : \textbf{dia1}
+				\item Dentro de la carpeta \textbf{dia1}, crear un archivo con la extension \textit{.txt}
+				\item Con el editor de texto \textit{nano}, escribir una breve descripción de los comandos que se han utilizado hasta el momento.
+			\end{itemize}
+			
+		\end{mybox}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{¿Qué es el GPIO?}
+		El GPIO o \textit{Entrada/Salidas de proposito general} es un pin genérico en un chip. En este caso la RPi cuenta con dos configuraciones de GPIO:
+		\begin{mybox}{GPIO}
+			\begin{itemize}
+				\item GPIO.BOARD: Este indica a los pines según su numeración.
+				\item GPIO.BCM: se refiere a los pines por su numero de \textit{Broadcom SOC channel}.
+			\end{itemize}
+		\end{mybox}
+		Para mostrar los pines en la RPi se puede usar el comando \textit{pinout} en la terminal.
+	\end{frame}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{GPIO.BOARD}
+		\begin{figure}
+			\includegraphics[scale=0.4]{rpiboard.png}
+			\caption{Enumeración de pines según BOARD}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{GPIO.BCM}
+		\begin{figure}
+			\includegraphics[scale=0.34]{rpibcm2.png}
+			\caption{Enumeración de pines según BCM}
+		\end{figure}
+	\end{frame}
 %----------------------------------------------------
 \end{document}
