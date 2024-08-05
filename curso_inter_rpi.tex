@@ -329,13 +329,14 @@
 		\framesubtitle{Actividad 1:}
 		\begin{mybox}{Creación de un archivo de texto}
 			\begin{itemize}
-				\item Crear una carpeta en la dirección del \textit{home} con el nombre \textbf{cursorpi}, dentro de esa misma agregar otra carpeta con el nombre : \textbf{dia1}
+				\item Crear una carpeta en la dirección del \textit{home} con sus iniciales \textbf{abcd}, dentro de esa misma agregar otra carpeta con el nombre : \textbf{dia1}
 				\item Dentro de la carpeta \textbf{dia1}, crear un archivo con la extension \textit{.txt}
 				\item Con el editor de texto \textit{nano}, escribir una breve descripción de los comandos que se han utilizado hasta el momento.
 			\end{itemize}
 			
 		\end{mybox}
 	\end{frame}
+	\subsection{GPIO}
 	\begin{frame}
 		\frametitle{Programación en RPi}
 		\framesubtitle{¿Qué es el GPIO?}
@@ -395,16 +396,42 @@
 			\end{itemize}
 		\end{mybox}
 	\end{frame}
-	
+\subsection{Ambiente virtual venv}	
 	\begin{frame}
 		\frametitle{Programación en RPi}
-		\framesubtitle{Instalación de Venv}
+		\framesubtitle{Instalación de venv}
 		El modulo venv, admite la creación de entornos virtuales, sobre una instalación de Python existente y queda aislada para administrar de mejor manera la gestión de los paquetes que se instalan y evitar dañar la configuración actual. 
 		\begin{mybox}{Instalación de venv}
 			\begin{itemize}
 				\item sudo apt install python3-venv
 			\end{itemize}	
 		\end{mybox}	
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Configuración de venv}
+		\begin{mybox}{Instalación de venv}
+			\begin{itemize}
+				\item Crear una carpeta donde ubicar el ambiente virtual
+				\item Ejecutar para crear el ambiente virtual python -m venv nombredecarpeta
+				\item Para activarlo nombredecarpeta /bin/activate
+				\item Para instalar un paquete nombredecarpeta/bin/pip install nombredebiblioteca
+			\end{itemize}
+		\end{mybox}	
+	\end{frame}
+	
+		\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Actividad 3:}
+		\begin{mybox}{Instalacion de venv}
+			\begin{itemize}
+				\item Crear una carpeta dentro de \textbf{Documentos} con sus iniciales \textbf{abcd}
+				\item Una vez creada su carpeta, dentro crear una nueva con el nombre de \textbf{virtual}
+				\item Activar el ambiente venv en la terminal.
+				\item Una vez activado, crear un archivo de texto \textbf{.txt} con los comandos utilizados al mismo nivel de su carpeta \textbf{abcd}
+			\end{itemize}
+		\end{mybox}
 	\end{frame}
 	
 	\begin{frame}
