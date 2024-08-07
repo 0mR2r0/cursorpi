@@ -5,7 +5,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \lstset{language=Python,upquote=true,
-	basicstyle=\ttfamily\tiny,numbers=left,
+	basicstyle=\ttfamily\small,numbers=left,
 	numberstyle=\tiny,stepnumber=1,numbersep=5pt,
 	backgroundcolor=\color{white},frame=single,tabsize=2,
 	showspaces=false,showstringspaces=false,showtabs=false,
@@ -444,7 +444,7 @@
 			\end{itemize}
 		\end{mybox}
 	\end{frame}
-	
+	\subsection{Sensor MLX90614}
 	\begin{frame}
 		\frametitle{Programación en RPi}
 		\framesubtitle{Sensor de temperatura: MLX90614}
@@ -463,10 +463,42 @@
 		\framesubtitle{Sensor de temperatura: MLX90614}
 		\begin{mybox}{Programa básico de MLX90614}
 		\begin{lstlisting}
-			import numpy as np
+			from smbus2 import SMBus
+			from mlx90614 import MLX90614
+			
+			bus = SMBus(1)
+			sensor = MLX90614(bus, address=0x5A)
+			print sensor.get_amb_temp()
+			print sensor.get_obj_temp()
+			bus.close()
 		\end{lstlisting}
 		\end{mybox}
+	\end{frame}
 	
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Actividad 4:}
+		\begin{mybox}{Requisitos de modificación}
+			\begin{itemize}
+				\item El programa debe estar mostrando en la terminal de manera continua el valor de la temperatura.
+				\item Debe haber un intervalo de mínimo de espera un 1 segundo por cada valor mostrado.
+				\item Usar el programa debe contener comentarios con la descripción de como es la estructura del programa.
+			\end{itemize}
+		\end{mybox}
+	\end{frame}
+	\subsection{Pandas}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Pandas}
+		Es una biblioteca de código abierto para estructura y análisis de datos programada en Python.
+		\newline
+		Pandas provee dos tipos de clases de manejo de datos:
+		\begin{mybox}{Pandas}
+			 \begin{itemize}
+			 	\item \textbf{Series:} Es un arreglo unidimensional para contener datos de cualquier tipo.
+			 	\item \textbf{DataFrame:} Es una estructura bidimensional que contiene datos en forma de tabla con filas y columnas.
+			 \end{itemize}
+		\end{mybox}
 	\end{frame}
 	
 	\begin{frame}
@@ -481,9 +513,9 @@
 			\end{itemize}
 		\end{mybox}
 	\end{frame}
-	\begin{frame}
-		\frametitle{Programación en RPi}
-		\framesubtitle{PWM}
-	\end{frame}
+	%\begin{frame}
+	%	\frametitle{Programación en RPi}
+	%	\framesubtitle{PWM}
+	%\end{frame}
 %----------------------------------------------------
 \end{document}
