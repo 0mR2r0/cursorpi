@@ -3,6 +3,16 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{listings}
+\lstset{language=Python,upquote=true,
+	basicstyle=\ttfamily\tiny,numbers=left,
+	numberstyle=\tiny,stepnumber=1,numbersep=5pt,
+	backgroundcolor=\color{white},frame=single,tabsize=2,
+	showspaces=false,showstringspaces=false,showtabs=false,
+	breaklines=true,breakatwhitespace=true,escapeinside=||,
+	keywordstyle=\color{blue!70},stringstyle=\color{green!70!black!70},
+	commentstyle=\color{black!80}\it
+	}
 %Declaracion del tema modificado
 \usetheme[logo=rpi]{arturo}
 %Declaracion de contenedor de imagenes
@@ -150,6 +160,7 @@
 		\framesubtitle{Comandos básicos de la terminal}
 		\begin{mybox}{Instrucciones:}
 			\begin{itemize}
+				\item pwd : Muestra la ruta de la ubicación de trabajo.
 				\item ifconfig : Consultar la información de las interfaces de red.
 				\item sudo raspi-config : Entrar a la configuración de la Raspberry Pi
 				\item pinout : Muestra la distribución de pines de la tarjeta.
@@ -447,7 +458,16 @@
 		
 	\end{frame}
 	
+	\begin{frame}[fragile]
+		\frametitle{Programación en RPi}
+		\framesubtitle{Sensor de temperatura: MLX90614}
+		\begin{mybox}{Programa básico de MLX90614}
+		\begin{lstlisting}
+			import numpy as np
+		\end{lstlisting}
+		\end{mybox}
 	
+	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Programación en RPi}
