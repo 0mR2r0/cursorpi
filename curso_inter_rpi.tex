@@ -259,7 +259,7 @@
 	\subsection{Conexión remota con SSH}
 	\begin{frame}
 		\frametitle{Configuración inicial}
-		\framesubtitle{Conexion SSH con Windows}
+		\framesubtitle{Conexión SSH con Windows}
 		Para crear la conexión SSH con Windows se utilizará el siguiente programa PuTTY:
 		\begin{mybox}{Instrucciones:}
 			\begin{itemize}
@@ -435,7 +435,7 @@
 		\begin{frame}
 		\frametitle{Programación en RPi}
 		\framesubtitle{Actividad 3:}
-		\begin{mybox}{Instalacion de venv}
+		\begin{mybox}{Instalación de venv}
 			\begin{itemize}
 				\item Crear una carpeta dentro de \textbf{Documentos} con sus iniciales \textbf{abcd}
 				\item Una vez creada su carpeta, dentro crear una nueva con el nombre de \textbf{virtual}
@@ -531,7 +531,7 @@
 	\end{frame}
 	
 	\begin{frame}[fragile]
-		\frametitle{Programacion en RPi}
+		\frametitle{Programación en RPi}
 		\framesubtitle{Pandas: Series}
 		\begin{mybox}{Ejemplo de Series:}
 			\begin{lstlisting}
@@ -597,6 +597,50 @@
 			\end{itemize}
 		\end{mybox}
 	\end{frame}
+	
+	\begin{frame}[fragile]
+		\frametitle{Programación en RPi}
+		\framesubtitle{Actividad 7:}
+		\begin{mybox}{Ejemplo de gráfica en matplotlib.pyplot:}
+			\begin{lstlisting}
+				import matplotlib.pyplot as plt
+				plt.plot([1, 2, 3, 4])
+				plt.ylabel('Numeros')
+				plt.show()
+			\end{lstlisting}
+		\end{mybox}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Biblioteca: Numpy}
+		Es una biblioteca fundamental de computo científico con Python. Esta provee objetos de arreglos multidimensionales como vectores y matrices.
+		\begin{mybox}{Numpy}
+			Para instalar ejecutar la siguiente instrucción: \textbf{sudo apt install python3-numpy}
+		\end{mybox}
+	\end{frame}
+	
+	\begin{frame}[fragile]
+		\frametitle{Programación en RPi}
+		\framesubtitle{Actividad 7:}
+		\begin{mybox}{Ejemplo de gráfica en matplotlib.pyplot:}
+			\begin{lstlisting}
+				import matplotlib.pyplot as plt
+				import numpy as np
+				# Tiempo de muestreo en intervalos de 200ms 
+				t = np.arange(0., 5., 0.2)
+				# Lineas punteadas, cuadrados azules and triangulos verdes
+				plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^')
+				plt.show()
+			\end{lstlisting}
+		\end{mybox}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Programación en RPi}
+		\framesubtitle{Creación   de funciones}
+		Slides de funciones
+	\end{frame}
+	
 	\begin{frame}
 		\frametitle{Programación en RPi}
 		\framesubtitle{PWM}
