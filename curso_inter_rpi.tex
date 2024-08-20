@@ -638,21 +638,78 @@
 	\begin{frame}
 		\frametitle{Programación en RPi}
 		\framesubtitle{Creación   de funciones}
-		Slides de funciones
-	\end{frame}
-	
-	\begin{frame}
-		\frametitle{Programación en RPi}
-		\framesubtitle{PWM}
-		La modulación por ancho de pulso o PWM, se usa para controlar el ancho de una señal digital con el propósito de controlar a su vez la potencia que se entrega. Modificando el ancho del pulso activo.
-		\begin{mybox}{Comandos para RPi}
+		Para crear una función en Python tiene la siguiente sintaxis: 
+		\begin{mybox}{Sintaxis}
 			\begin{itemize}
-				\item Se usará la biblioteca gpiozero basado en Python.
-				\item Esta genera una señal PWM por software.
-				\item Los pines 0 y 1 están restringidos para uso de PWM.
+				\item La instrucción \textbf(def)
+				\item un nombre para identificar la función.
+				\item Paréntesis $()$ para indicar los datos de entrada, seguido de dos puntos :
+				\item Para terminar con la instrucción \textbf{return}
 			\end{itemize}
 		\end{mybox}
 	\end{frame}
+	\begin{frame}[fragile]
+		\frametitle{Programación en RPi}
+		\framesubtitle{Sentencia condicional: if}
+		La estructura de \textbf{if, elif, else}, sirve para controlar como es el flujo del programa.
+		\begin{mybox}{if}
+			\begin{lstlisting}
+				if True:
+					print("Se ejecuta la funcion")
+			\end{lstlisting}
+		\end{mybox}
+		\begin{mybox}{else}
+			\begin{lstlisting}
+				x = 3
+				if x > 4:
+					print("Ejecutando")
+				else:
+					print("El proceso no hace nada")
+			\end{lstlisting}
+		\end{mybox}
+		
+	\end{frame}
+	
+	\begin{frame}[fragile]
+		\frametitle{Programación en RPi}
+		\framesubtitle{Sentencia condicional: if}
+		La estructura de \textbf{if, elif, else}, sirve para controlar como es el flujo del programa.
+		
+		\begin{mybox}{elif}
+			\begin{lstlisting}
+				x = 8
+				if x < 4:
+					print("Ejecutando")
+				elif x < 2 :
+					print("Te faltan muestras")
+				elif x = 8:
+					print("Esto ya se acabo!!")
+				else:
+					print("Ni funciona este codigo")
+			\end{lstlisting}
+		\end{mybox}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{Evaluación final}
+			\begin{mybox}{Evaluación}
+				\begin{itemize}
+					\item Elaborar una funcion llamando todos los programas usados durante el curso.
+				\end{itemize}
+			\end{mybox}
+	\end{frame}
+	%\begin{frame}
+	%	\frametitle{Programación en RPi}
+	%	\framesubtitle{PWM}
+	%	La modulación por ancho de pulso o PWM, se usa para controlar el ancho de una señal digital con el propósito de controlar a su vez la potencia que se entrega. Modificando el ancho del pulso activo.
+	%	\begin{mybox}{Comandos para RPi}
+	%		\begin{itemize}
+	%			\item Se usará la biblioteca gpiozero basado en Python.
+	%			\item Esta genera una señal PWM por software.
+	%			\item Los pines 0 y 1 están restringidos para uso de PWM.
+	%		\end{itemize}
+	%	\end{mybox}
+	%\end{frame}
 	%\begin{frame}
 	%	\frametitle{Programación en RPi}
 	%	\framesubtitle{PWM}
